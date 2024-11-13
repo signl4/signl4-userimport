@@ -1,0 +1,12 @@
+﻿user_email;team_name;user_role
+it_storage1@example.com;IT_Storage;TeamAdmin
+it_storage2@example.com;IT_Storage;User
+it_storage3@example.com;IT_Storage;User
+it_application1@example.com;IT_Application;TeamAdmin
+it_application2@example.com;IT_Application;User
+it_application3@example.com;IT_Application;User
+it_network1@example.com;IT_Network;TeamAdmin
+it_network2@example.com;IT_Network;Scheduler
+it_network3@example.com;IT_Network;User
+it_person@example.com;IT_Network;User
+it_person@example.com;IT_Application;Scheduler
