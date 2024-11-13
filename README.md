@@ -33,7 +33,8 @@ The two step approach is required when users are supposed to be member in multip
    - Users receive an invitation link via email, enabling them to complete their sign-up either by creating a new SIGNL4 identity or by using an existing third-party identity provider such as EntraID, Apple, or Google.
 
 3. **Step 3: Run `2_addUsersToTeams_csv.ps1`**  
-   > **Note**: If each user in the CSV file is only assigned to one specific team (i.e. has only one row in the file), this step is not  needed.
+   > **Note**: If each user in the CSV file is only assigned to one specific team (i.e. has only one row in the file), this step is not  actually needed.
+   However, it iterates the users in the account again and at the end also outputs each users status which helps you to get an understanding about the majority of users who already accepted the invitation to SIGNL4 and completed their sign-up.
    - After users have completed their sign-up, this script verifies that each user is assigned to all teams specified in the CSV.
    - Users missing team memberships are automatically added to the relevant teams, completing the onboarding process.
 
