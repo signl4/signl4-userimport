@@ -29,7 +29,7 @@ The two step approach is required when users are supposed to be member in multip
 
 2. **Step 2: Run `1_inviteUsersToTeams_csv.ps1`**  
    - This script reads the CSV file and invites each user to a designated team in SIGNL4. An invitation email is sent to each user.
-   - If any users or teams listed in the CSV file already exist in SIGNL4, they are deleted first to match the CSV configuration exactly.
+   - If any users or teams listed in the CSV file already exist in SIGNL4, then by default they are deleted first to match the CSV configuration exactly (can be configured in the script).
    - Users receive an invitation link via email, enabling them to complete their sign-up either by creating a new SIGNL4 identity or by using an existing third-party identity provider such as EntraID, Apple, or Google.
 
 3. **Step 3: Run `2_addUsersToTeams_csv.ps1`**  
