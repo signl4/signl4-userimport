@@ -12,11 +12,11 @@ The `csv` folder within this repository contains three essential files to facili
    - This file defines the desired users and their team memberships within SIGNL4. Each row should contain a user's email address and the team(s) to which they should belong.
    - **Configuration**: Before proceeding with the import process, open this file and adjust it to reflect the actual users and teams for your SIGNL4 account. Ensure that each user and team entry aligns with your organizational structure.
 
-2. **Script 1 - `1_inviteUsersToTeams_csv.ps1` (optional, see below)**  
+2. **Script 1 - `1_inviteUsersToTeams_csv.ps1`**  
    - This PowerShell script reads the user and team data from the CSV file and initiates the invitation process by assigning each user to their initial team within SIGNL4. It sends an email invitation link to each user listed.
    - If any users or teams in the CSV already exist in SIGNL4, they will be deleted first, ensuring that the CSV file contents are accurately reflected in SIGNL4.
 
-3. **Script 2 - `2_addUsersToTeams_csv.ps1`**  
+3. **Script 2 - `2_addUsersToTeams_csv.ps1` (optional, see below)**  
    - This PowerShell script completes the onboarding by verifying each user’s team memberships against the CSV file after they have accepted their initial invitation.
    - Users who are missing team assignments as specified in the CSV file are added to the appropriate teams to finalize their onboarding.
 
